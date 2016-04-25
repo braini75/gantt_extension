@@ -13,7 +13,7 @@ If your Redmine Version is not working you can try to update the file +/path/to/
 == Installation
 1. go to `{REDMINE_ROOT}/plugin` directory.
 2. Intall:
-  git clone https://github.com/braini75/gannt_extension.git
+  git clone https://github.com/braini75/gantt_extension.git
 3. Restart the redmine service. E.g. 
   service apache2 restart
 4. enjoy!
