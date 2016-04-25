@@ -2,9 +2,11 @@
 Adds an additional marker to issue for a custom defined date. You can choose any custom field (with Format "Date") at the plugin configuration page
 
 == Requirements
-Because we need to extend redmine core function, this plugin might need major maintenance, if /path/to/redmine/lib/redmine/helpers/gantt.rb is updated. If your version is not working you can try to update the file /path/to/redmine/plugins/gantt_extension/lib/gantt.rb so that those functions matches with the core functions in /path/to/redmine/lib/redmine/helpers/gantt.rb and the additional attribute 'custom_date' in def line().
+*Attention!!* This plugin extends core function!
 
-=== Tested versions:
+If your Redmine Version is not working you can try to update the file +/path/to/redmine/plugins/gantt_extension/lib/gantt.rb+ so that those functions matches with the core functions in +/path/to/redmine/lib/redmine/helpers/gantt.rb+ and the additional attribute 'custom_date' in def line().
+
+<b>Tested versions:</>
 - 3.2.1.devel
 
 
