@@ -1,0 +1,8 @@
+# German strings go here for Rails i18n
+de:
+  gantt_ext_description: "Wenn das Plugin aktiviert ist, wird in der gantt-Anzeige ein Symbol für das gewählte Datumsfeld eingefügt"
+  gantt_ext_enable_label: "Aktivieren"
+  gantt_ext_enable_help: "Auswählen zum Aktivieren des Plugins."
+  gantt_ext_field_label: "Datumsfeld"
+  gantt_ext_field_help: "Wähle ein benutzterdefiniertes Datumsfeld, welches in die gantt-Ansicht eingefügt werden soll."
+  gantt_ext_field_error: "Bitte erstelle erst ein Benutzerdefiniertes Feld mit Format \"Datum\"!"

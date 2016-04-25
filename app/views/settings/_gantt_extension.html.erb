@@ -1,0 +1,27 @@
+<%
+# This file provides configuration options for the gantt_extension plugin.
+
+custom_date_fields = CustomField.select { |x| x.field_format == "date" }
+if custom_date_fields.empty?
+	flash[:error] = l(:gantt_ext_field_error)
+else
+%>
+<div>
+	<%= l(:gantt_ext_description)%>	
+</div>
+<table>
+  <tbody>
+  	<tr>
+  		<th><%= l(:gantt_ext_enable_label)%> </th>
+  		<td><%= check_box_tag 'settings[gantt_ext_enable]',1, settings['gantt_ext_enable']%></td>
+  		<td><%= l(:gantt_ext_enable_help) %></td>	
+  	</tr>
+    <tr>
+      <th><%= l(:gantt_ext_field_label)%></th>    
+       	<td><%= select_tag 'settings[gantt_ext_wunsch]', options_for_select(custom_date_fields.collect {|t| [ t.name, t.id ] }, settings['gantt_ext_wunsch'])%></td>
+      	<td><%= l(:gantt_ext_field_help)%></td>
+    </tr>
+  </tbody>
+</table>
+
+<%end%>

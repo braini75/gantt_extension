@@ -1,0 +1,9 @@
+# English strings go here for Rails i18n
+en:
+  # my_label: "My label"
+  gantt_ext_description: "If enabled, the plugin will extend the gantt chart with a symbol at defined dates"
+  gantt_ext_enable_label: "Enabled"
+  gantt_ext_enable_help: "Check to enable plugin. Uncheck to disable."
+  gantt_ext_field_label: "Custom Date field"
+  gantt_ext_field_help: "Pick custom field to show-up in gantt."
+  gantt_ext_field_error: "Please create first a custom field with Type \"Date\"."

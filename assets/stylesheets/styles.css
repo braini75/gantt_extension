@@ -1,0 +1,3 @@
+/***** Gantt chart Extension *****/
+
+.task.marker.wunsch { background-image:url(../images/wunsch_marker.png); background-repeat: no-repeat; border: 0; margin-left: -4px; margin-top: 1px; }
