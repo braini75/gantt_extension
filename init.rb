@@ -5,12 +5,13 @@ Redmine::Plugin.register :gantt_extension do
   version '0.1'
   url 'https://github.com/braini75/gantt_extension'
   author_url 'https://github.com/braini75'
-  require_dependency 'gantt'
-  
+    
   settings :default => {
     :gantt_ext_enable => 0
     }, :partial => 'settings/gantt_extension'
 end
+
+require_dependency 'gantt_patch'
 
 class GanttExtensionViewListener < Redmine::Hook::ViewListener
    def view_layouts_base_html_head(context)
