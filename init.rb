@@ -2,7 +2,7 @@ Redmine::Plugin.register :gantt_extension do
   name 'Gantt Extension plugin'
   author 'Thomas Koch'
   description 'Show a user defined date (custom field) in gantt'
-  version '0.1'
+  version '0.2'
   url 'https://github.com/braini75/gantt_extension'
   author_url 'https://github.com/braini75'
     

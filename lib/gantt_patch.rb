@@ -31,8 +31,10 @@ module GanttPatch
           if Setting['plugin_gantt_extension'][:gantt_ext_enable] && !Setting['plugin_gantt_extension'][:gantt_ext_wunsch].nil?
             markers = true          
             #custom_date_fields = issue.visible_custom_field_values.select { |x| x.custom_field.field_format == "date" }
-            custom_dates = issue.visible_custom_field_values.select { |x| x.custom_field.id == Setting['plugin_gantt_extension'][:gantt_ext_wunsch].to_i }.first     
-            custom_date = custom_dates.value.to_date unless custom_dates.nil?          
+            custom_dates = issue.visible_custom_field_values.select { |x| x.custom_field.id == Setting['plugin_gantt_extension'][:gantt_ext_wunsch].to_i }.first
+            unless custom_dates.nil?
+              custom_date = custom_dates.value.to_date unless custom_dates.value.nil?
+            end                      
           end 
           line(issue.start_date, issue.due_before, custom_date , issue.done_ratio, markers, label, options, issue)
         end
