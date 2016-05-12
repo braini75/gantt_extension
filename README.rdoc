@@ -18,8 +18,9 @@ Adds an additional marker to issue for a custom defined date. You can choose any
 
 
 == Usage
-Just enable the plugin "Administration->Plugins".
-Enjoy extra function in gantt-charts.
+- You need to have at least one custom-field of type 'date'.
+- Just enable the plugin and choose the field to display in "Administration->Plugins".
+- Enjoy extra function in gantt-charts.
 
 == Development
 <b>These Instuctions here are for developer or power user!</b> 
