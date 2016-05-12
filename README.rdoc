@@ -11,10 +11,13 @@ Adds an additional marker to issue for a custom defined date. You can choose any
 
 == Installation
 1) go to `{REDMINE_ROOT}/plugin` directory.
+
 2) Intall:
   git clone https://github.com/braini75/gantt_extension.git
+
 3) Restart the redmine service. E.g. 
   service apache2 restart
+
 4) enjoy!
 
 
@@ -25,4 +28,5 @@ Adds an additional marker to issue for a custom defined date. You can choose any
 
 == Development
 <b>These Instuctions here are for developer or power user!</b> 
+
 They are for the case, that redmine is updating some functions in their gantt modul, which might affect the function. Make sure that all functions in +/path/to/redmine/plugins/gantt_extension/lib/gantt.rb+ containing at least the funcionality of their original version in +/path/to/redmine/lib/redmine/helpers/gantt.rb+
