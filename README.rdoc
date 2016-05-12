@@ -4,10 +4,8 @@ Adds an additional marker to issue for a custom defined date. You can choose any
 == Requirements
 <b>Attention!!</b> This plugin extends core function!
 
-If your Redmine Version is not working you can try to update the file +/path/to/redmine/plugins/gantt_extension/lib/gantt.rb+ so that those functions matches with the core functions in +/path/to/redmine/lib/redmine/helpers/gantt.rb+ and the additional attribute 'custom_date' in def line().
-
 <b>Tested versions:</b>
-- 3.2.1.devel
+- 3.2.1.devel, 3.1.x
 
 
 == Installation
@@ -22,3 +20,7 @@ If your Redmine Version is not working you can try to update the file +/path/to/
 == Usage
 Just enable the plugin "Administration->Plugins".
 Enjoy extra function in gantt-charts.
+
+== Development
+<b>These Instuctions here are for developer or power user!</b> 
+They are for the case, that redmine is updating some functions in their gantt modul, which might affect the function. Make sure that all functions in +/path/to/redmine/plugins/gantt_extension/lib/gantt.rb+ containing at least the funcionality of their original version in +/path/to/redmine/lib/redmine/helpers/gantt.rb+
